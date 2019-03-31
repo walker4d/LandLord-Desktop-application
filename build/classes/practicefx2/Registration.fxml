@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="RegistrationLPane" fx:id="RegistrationLPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practicefx2.RegistrationController">
+   <children>
+      <Pane prefHeight="481.0" prefWidth="736.0" style="-fx-background-color: #2E3131;">
+         <children>
+            <Pane prefHeight="50.0" prefWidth="736.0" style="-fx-background-color: #005BA5;" />
+            <TextField id="LN" fx:id="LN" layoutX="142.0" layoutY="131.0" prefHeight="25.0" prefWidth="132.0" />
+            <TextField id="ID" fx:id="ID" layoutX="142.0" layoutY="188.0" prefHeight="25.0" prefWidth="132.0" />
+            <TextField id="password" fx:id="password" layoutX="142.0" layoutY="241.0" prefHeight="25.0" prefWidth="132.0" />
+            <TextField id="Cpassword" fx:id="Cpassword" layoutX="142.0" layoutY="295.0" prefHeight="25.0" prefWidth="132.0" />
+            <TextField id="Email" fx:id="Email" layoutX="388.0" layoutY="99.0" />
+            <TextField id="FN" fx:id="FN" layoutX="142.0" layoutY="74.0" prefHeight="25.0" prefWidth="132.0" />
+            <Label layoutX="18.0" layoutY="78.0" text="First name" textFill="WHITE" />
+            <Label layoutX="18.0" layoutY="135.0" text="Last name" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="192.0" text="Id number" textFill="WHITE" />
+            <Label layoutX="18.0" layoutY="245.0" text="Password" textFill="WHITE" />
+            <Label layoutX="18.0" layoutY="299.0" text="Confirm Password" textFill="WHITE" />
+            <Label layoutX="300.0" layoutY="103.0" text="Email Address" textFill="WHITE" />
+            <JFXButton id="submitButton" fx:id="submitButton" layoutX="655.0" layoutY="431.0" onAction="#submitAction" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #222;" text="Submit" textFill="WHITE" />
+            <JFXButton id="Cancel" fx:id="Cancel" layoutX="581.0" layoutY="431.0" onAction="#cancelAction" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #8c0303;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView id="imageView" fx:id="imageView" fitHeight="140.0" fitWidth="189.0" layoutX="563.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/default.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <JFXButton id="uploadButton" fx:id="uploadButton" layoutX="597.0" layoutY="254.0" onAction="#uploadAction" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #222;" text="Upload" textFill="WHITE" />
+            <TextField id="Tele" fx:id="Tele" layoutX="142.0" layoutY="360.0" prefHeight="25.0" prefWidth="132.0" />
+            <TextField id="Address" fx:id="Address" layoutX="388.0" layoutY="152.0" />
+            <Label layoutX="14.0" layoutY="364.0" prefHeight="17.0" prefWidth="115.0" text="Telephone number" textFill="WHITE" />
+            <Label layoutX="304.0" layoutY="156.0" text="Address " textFill="WHITE" />
+            <JFXRadioButton id="femaleOption" fx:id="femaleOption" layoutX="456.0" layoutY="206.0" text="Female" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Group" />
+               </toggleGroup></JFXRadioButton>
+            <JFXRadioButton id="MaleOPtion" fx:id="MaleOPtion" layoutX="392.0" layoutY="206.0" text="Male" textFill="WHITE" toggleGroup="$Group" />
+            <Label layoutX="304.0" layoutY="206.0" text="Gender" textFill="WHITE" />
+            <TextField id="Accountnumber" fx:id="Accountnumber" layoutX="396.0" layoutY="250.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="300.0" layoutY="254.0" prefHeight="17.0" prefWidth="115.0" text="AccountNum" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
