@@ -382,10 +382,10 @@ ArrayList<Tenant> list = new ArrayList<Tenant>();
 //              LandLord landlord = (LandLord) new Genertics().getAnyObject(FileInterface.LOGIN_Temp);
          
             String host ="smtp.gmail.com" ;
-            String user = this.email.getText();//"brianwalker4d@gmail.com";
-            String pass = this.password.getText();//"brian4walker";
+            String user = this.email.getText();//your email;
+            String pass = this.password.getText();//password;
             String to = getTenants().getEmailAddress();
-            String from = this.email.getText();// "brianwalker4d@gmail.com";
+            String from = this.email.getText();// email again;
             String subject = "This is confirmation number for your expertprogramming account. Please insert this number to activate your account.";
             String messageText = "" + "Tenant "+ getTenants().getFirstName() + " " + getTenants().getLastName()+"\n" + this.message.getText();
                 ;
